@@ -1,0 +1,9 @@
+.shop-cart {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 2px solid gray;
+}
+
+.cart-container {
+    border-left: 2px solid rgb(226, 199, 199);
+}

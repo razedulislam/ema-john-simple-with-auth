@@ -1,0 +1,20 @@
+.logo {
+    width: 50%;
+}
+
+.navbar {
+    background-color: black;
+    padding: 25px;
+}
+.navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: lightblue;
+    height: 20px;
+}

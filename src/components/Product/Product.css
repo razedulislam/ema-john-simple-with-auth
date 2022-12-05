@@ -1,0 +1,21 @@
+.shop-btn {
+    background-color: goldenrod;
+    color: black;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+}
+.shop-btn:hover {
+    background-color: rgb(250, 203, 84);
+}
+.product {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+}
+.product-des {
+    text-align: left;
+    margin-left: 20px;
+}
