@@ -14,7 +14,7 @@ const Product = (props) => {
                 <h4>seller by : {seller}</h4>
                 <h4>Price :{price}</h4>
                 <p className="product-stock">Stock Only : {stock} products</p>
-                <button onClick={() => props.handlerAddToCart(props.product)} className="shop-btn">
+                <button onClick={() => props.handleraddToProducts(props.product)} className="shop-btn">
                     Add To Cart
                 </button>
             </div>

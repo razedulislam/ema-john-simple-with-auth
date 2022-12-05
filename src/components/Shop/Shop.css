@@ -7,3 +7,12 @@
 .cart-container {
     border-left: 2px solid rgb(226, 199, 199);
 }
+.search {
+    background-color: rgb(32, 31, 31);
+
+    padding: 10px;
+}
+.search-field {
+    width: 50%;
+    height: 25px;
+}
