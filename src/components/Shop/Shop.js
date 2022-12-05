@@ -1,15 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import "./Shop.css";
 
 const Shop = () => {
+    // use state declare
     const [products, setProducts] = useState([]);
-    fetch("fakeData/products.JSON")
-        .then((res) => res.json())
-        .then((data) => setProducts(data));
+    const [cart, setCart] = useState([]);
+
+    //data fetch inside useEffect hook
+    useEffect(() => {
+        fetch("fakeData/products.JSON")
+            .then((res) => res.json())
+            .then((data) => setProducts(data));
+    }, []);
 
     const handlerAddToCart = (product) => {
-        console.log(product.name);
+        // console.log(product.name);
+        const newCart = [...cart, product];
+        // console.log(newCart);
+        setCart(newCart);
     };
     return (
         <div className="shop-cart">
@@ -20,7 +30,7 @@ const Shop = () => {
                 ))}
             </div>
             <div className="cart-container">
-                <h1>Cart</h1>
+                <Cart cart={cart} />
             </div>
         </div>
     );
