@@ -29,6 +29,7 @@ const Cart = (props) => {
             <h4>Delivery Charge : {deliveryCharge}</h4>
             <hr />
             <h4>Grant Total : {grantTotal.toFixed(2)}</h4>
+            {props.children}
         </div>
     );
 };

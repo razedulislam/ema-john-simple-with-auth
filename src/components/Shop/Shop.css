@@ -6,6 +6,8 @@
 
 .cart-container {
     border-left: 2px solid rgb(226, 199, 199);
+    background-color: goldenrod;
+    height: 370px;
 }
 .search {
     background-color: rgb(32, 31, 31);

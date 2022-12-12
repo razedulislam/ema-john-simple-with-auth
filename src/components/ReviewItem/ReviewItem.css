@@ -1,0 +1,33 @@
+.review-items {
+    display: flex;
+    border: 2px solid greenyellow;
+    background-color: rgb(255, 252, 252);
+    border-radius: 20px;
+    margin: 20px;
+    width: 650px;
+    margin-left: 20%;
+    margin-right: 50%;
+}
+
+.review-img {
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+}
+.review-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+.review-btn {
+    background-color: gold;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.review-btn-item {
+    display: flex;
+    align-items: center;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import useProducts from "../../hooks/useProducts";
 import { addToDb, getStoredCart } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
@@ -7,11 +8,12 @@ import "./Shop.css";
 
 const Shop = () => {
     // use state declare
+    //nijeder create kora hook call korechi= useProducts
     const [products, setProducts] = useProducts();
     const [cart, setCart] = useState([]);
     const [displayCart, setDisplayCart] = useState([]);
 
-    //data fetch inside useEffect hook
+    // data fetch inside useEffect hook
     useEffect(() => {
         fetch("fakeData/products.JSON")
             .then((res) => res.json())
@@ -69,7 +71,11 @@ const Shop = () => {
                     ))}
                 </div>
                 <div className="cart-container">
-                    <Cart cart={cart} />
+                    <Cart cart={cart}>
+                        <Link to="/Orders">
+                            <button>Check Orders</button>{" "}
+                        </Link>
+                    </Cart>
                 </div>
             </div>
         </>
