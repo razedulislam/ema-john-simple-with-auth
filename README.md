@@ -1,3 +1,26 @@
+## step to start this app
+
+## clone this git
+```
+git clone https://github.com/razedulislam/ema-john-simple-with-auth.git
+```
+
+## Open VScode and go to app directory
+```
+cd ema-john-simple-with-auth
+```
+
+## install npm if not already install 
+```
+npm install
+```
+
+## start the app using npm
+```
+npm start
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
